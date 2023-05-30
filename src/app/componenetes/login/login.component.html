@@ -1,0 +1,41 @@
+<!-- component -->
+
+    <section class="min-h-screen flex items-stretch text-white ">
+        <div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style="background-image: url(../../../assets/login.jpg);">
+            <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+            <div class="w-full px-24 z-10">
+                <h1 class="text-5xl font-bold text-left tracking-wide"></h1>
+                <p class="text-3xl my-4"></p>
+            </div>
+           
+        </div>
+        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0" style="background-color: #01304e;">
+            <div class="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center" style="background-image: url(../../../assets/login.jpg);">
+                <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+            </div>
+            <div class="w-full py-6 z-20 flex flex-col items-center">
+                <img class="w-44 justify-center items-center" src="../../../assets/logo.png" alt="">
+               
+                <p class="text-gray-100">
+                    Para acessar digite sua apikey e link api 
+                </p>
+                <form (submit)="login()" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+                    <div class="pb-2 pt-4">
+                      <input type="text" name="apikey" id="apikey" [(ngModel)]="apikey" placeholder="Digite APIKEY" class="block w-full p-4 text-lg rounded-sm bg-black">
+                    </div>
+            
+                    <div class="pb-2 pt-4">
+                      <input type="text" name="link" id="link" [(ngModel)]="link" placeholder="Digite seu link" class="block w-full p-4 text-lg rounded-sm bg-black">
+                    </div>
+            
+                    <div class="px-4 pb-2 pt-4">
+                      <button type="submit" class="uppercase block w-full p-4 text-lg rounded-full bg-cyan-800 hover:bg-indigo-600 focus:outline-none">Entrar</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+
+
+   
